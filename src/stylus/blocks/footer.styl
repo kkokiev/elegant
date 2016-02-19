@@ -1,0 +1,31 @@
+.footer
+	background bg-dark
+	padding-y(31px)
+	font-size 16px
+
+	+below(mobile)
+		padding-y(40px)
+		font-size 20px
+		line-height 32px
+
+	&__container
+		max-width 768px
+		margin 0 auto
+		clearfix()
+
+		+below(mobile)
+			padding-x(32px)
+
+	&__copyright
+		float left
+
+		+below(mobile)
+			float none
+
+	&__contact
+		float right
+		color dark
+		text-decoration none
+
+		+below(mobile)
+			float none

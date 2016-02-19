@@ -1,0 +1,46 @@
+.contacts
+	color dark
+
+	+below(mobile)
+		color darkest
+
+	&__map
+		height 300px
+		width 100%
+		border 0
+
+	&__info
+		clearfix()
+		margin-top -9px
+		background bg-light
+
+	&__info-block
+		float left
+		width 50%
+		padding-top 25px
+		padding-bottom 40px
+
+		+below(mobile)
+			float none
+			width 100%
+			padding-x(50px)
+			padding-y(25px)
+
+	&__title
+		margin-bottom 18px
+		font-size 13px
+		font-family font-thick
+		line-height 60px
+		text-transform uppercase
+		letter-spacing()
+
+		+below(mobile)
+			font-size 28px
+
+	&__text
+		font-size 19px
+		font-family font-regular
+		letter-spacing 0.03em
+
+		+below(mobile)
+			font-size 30px

@@ -1,0 +1,101 @@
+.topline
+	position fixed
+	width 100%
+	padding-top 16px
+	padding-bottom 10px
+	background rgba(0,0,0, .3);
+	z-index 100
+	clearfix()
+
+	+below(mobile)
+		padding-top 12px
+		padding-bottom 0
+		background rgba(bg-darkest, .7)
+
+	&__container
+		max-width 1084px
+		margin 0 auto
+
+	&__logo
+		display block
+		float left
+
+		+below(mobile)
+			margin-left 25px
+
+	&__logo-img
+		height auto
+		width 185px
+
+	&__btn
+		position relative
+		display inline-block
+		float right
+		margin-top 10px
+		padding-right 22px
+		color light
+		font-size 16px
+		line-height 16px
+		font-family font-thick
+		text-decoration none
+		text-transform uppercase
+		letter-spacing()
+
+		+below(768px)
+			width 86px
+			margin-top -12px
+			line-height 62px
+			background rgba(bg-darkest, .7)
+			text-indent 100%
+			white-space nowrap
+			overflow hidden
+
+		&:after
+			content ''
+			position absolute
+			top 2px
+			right 0
+			left auto
+			display block
+			height 12px
+			width 18px
+			background transparent url(../img/static/hamburger.png) 0 0 no-repeat
+			background-size cover
+
+			+below(768px)
+				top 0
+				left 0
+				right 0
+				bottom 0
+				margin auto
+
+	&__nav
+		clear both
+		height 0
+		overflow hidden
+
+		+below(mobile)
+			background rgba(bg-darkest, .7)
+
+	&__menu
+		border-top 1px solid light
+
+		+below(mobile)
+			padding-right 32px
+			border-top 0
+
+	&__menu-item
+		padding 5px 0
+
+	&__menu-link
+		display block
+		color light
+		font-family font-thick
+		text-align right
+		text-decoration none
+		text-transform uppercase
+		transition(all .4s linear)
+
+		&:hover
+			color brand
+

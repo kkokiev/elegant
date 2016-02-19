@@ -1,0 +1,26 @@
+.works
+	clearfix()
+	margin-x(-3px)
+
+	+below(mobile)
+		margin-x(-32px)
+
+
+	&__item
+		display block
+		float left
+		width 25%
+		padding 0 3px
+		margin-bottom 3px
+
+		+below(mobile)
+			float none
+			width 100%
+			padding 0
+
+	&__link
+		display block
+		line-height 1
+
+	&__img
+		width 100%

@@ -1,0 +1,17 @@
+.banner
+	position relative
+	height 100vh
+	background transparent url(../img/content/bg-home.jpg) 0 0 no-repeat
+	background-size cover
+
+
+	&__content
+		position absolute
+		top 50%
+		width 100%
+		transform translateY(-50%)
+		text-align center
+
+		+below(mobile)
+			padding-x(32px)
+

@@ -1,0 +1,21 @@
+mixin topline()
+	header.topline&attributes(attributes)
+		.topline__container
+			a.topline__logo(href='/')
+				img.topline__logo-img(src='img/static/logo.png' alt='logo')
+
+			a.topline__btn#nav-toggle(href='#')
+				|Menu
+
+			nav.topline__nav#nav-menu
+				ul.topline__menu
+					li.topline__menu-item
+						a.topline__menu-link(href='/') Home
+					li.topline__menu-item
+						a.topline__menu-link(href='/blog.html') Blog
+					li.topline__menu-item
+						a.topline__menu-link(href='/work.html') Work
+					li.topline__menu-item
+						a.topline__menu-link(href='/about.html') About
+					li.topline__menu-item
+						a.topline__menu-link(href='/contact.html') Contact

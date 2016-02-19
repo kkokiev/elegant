@@ -1,0 +1,41 @@
+.workers
+	clearfix()
+	padding-x(7px)
+	text-align left
+
+	&__worker
+		display block
+		float left
+		width 245px
+		margin-x(3px)
+		background bg-light
+
+		+below(768px)
+			float none
+			width 100%
+			margin-bottom 60px
+
+	&__info
+		padding-x(17px)
+		padding-bottom 40px
+
+	&__photo
+		width 100%
+
+	&__profession
+		color brand
+		font-size 13px
+		font-family font-thick
+		text-transform uppercase
+		letter-spacing()
+
+	&__name
+		font-size 21px
+		font-family font-regular
+		margin-bottom 23px
+		letter-spacing()
+
+	&__text
+		font-size 13px
+		line-height 23px
+		letter-spacing()

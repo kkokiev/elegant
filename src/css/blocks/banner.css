@@ -1,0 +1,15 @@
+.banner {
+  position: relative;
+  height: 100vh;
+  background: transparent url("../img/content/bg-home.jpg") 0 0 no-repeat;
+  background-size: cover;
+}
+.banner__content {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+  text-align: center;
+below(mobile)
+}
+/*# sourceMappingURL=src/stylus/blocks/banner.css.map */

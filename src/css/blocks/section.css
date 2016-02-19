@@ -1,0 +1,27 @@
+.section {
+  padding: 70px 0;
+  text-align: center;
+  overflow-x: hidden;
+below(mobile)
+}
+.section__intro {
+  color: brand;
+  font-family: font-thick;
+  font-size: 13px;
+  line-height: 40px;
+  text-transform: uppercase;
+below(mobile)
+}
+.section__title {
+  margin-bottom: 40px;
+  font-family: font-thick;
+  font-size: 44px;
+  line-height: 50px;
+  text-transform: capitalize;
+}
+.section__container {
+  max-width: 768px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+/*# sourceMappingURL=src/stylus/blocks/section.css.map */

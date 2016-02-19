@@ -1,0 +1,21 @@
+.footer {
+  background: bg-dark;
+  font-size: 16px;
+below(mobile)
+}
+.footer__container {
+  max-width: 768px;
+  margin: 0 auto;
+below(mobile)
+}
+.footer__copyright {
+  float: left;
+below(mobile)
+}
+.footer__contact {
+  float: right;
+  color: dark;
+  text-decoration: none;
+below(mobile)
+}
+/*# sourceMappingURL=src/stylus/blocks/footer.css.map */

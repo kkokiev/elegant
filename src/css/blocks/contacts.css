@@ -1,0 +1,35 @@
+.contacts {
+  color: dark;
+below(mobile)
+}
+.contacts__map {
+  height: 300px;
+  width: 100%;
+  border: 0;
+}
+.contacts__info {
+  margin-top: -9px;
+  background: bg-light;
+}
+.contacts__info-block {
+  float: left;
+  width: 50%;
+  padding-top: 25px;
+  padding-bottom: 40px;
+below(mobile)
+}
+.contacts__title {
+  margin-bottom: 18px;
+  font-size: 13px;
+  font-family: font-thick;
+  line-height: 60px;
+  text-transform: uppercase;
+below(mobile)
+}
+.contacts__text {
+  font-size: 19px;
+  font-family: font-regular;
+  letter-spacing: 0.03em;
+below(mobile)
+}
+/*# sourceMappingURL=src/stylus/blocks/contacts.css.map */
