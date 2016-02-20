@@ -1,0 +1,27 @@
+include btn
+
+mixin address
+	.address&attributes(attributes)
+
+		.address__bar
+			.address__block.address__block_light
+				br
+				p.address__text
+					|Rua Serpa Pinto, Lisbon, Portugal
+
+			.address__block.address__block_wide.address__block_bg
+
+		.address__bar
+			.address__block.address__block_wide
+				p.address__text.address__text_thin
+					| Good design as little design as possible. Good design is to chance. My goal is making something memorable and especially the consumer. Good design is aesthetic. Care and aesthetic. Good design emphasises the consumer. It does not only functional.
+
+			.address__block.address__block_dark
+				br
+				p.address__text
+					|+88 (0) 101 0000 000
+				p.address__text
+					|+88 (0) 101 0000 000
+
+		.address__btn-container
+			+btn(href='mailto:constantine.kononenko@gmail.com') Shote us an Email

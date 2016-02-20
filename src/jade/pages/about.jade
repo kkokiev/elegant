@@ -1,0 +1,38 @@
+extends ../components/layout-default
+include ../components/page
+include ../components/topline
+include ../components/banner
+include ../components/section
+include ../components/services
+include ../components/footer
+include ../components/script
+
+block head
+	- var pageTitle = 'Elegant Home';
+
+block content
+	+page
+
+		//header
+		+topline
+
+		//banner
+		+banner(class='banner_about')
+			a.banner__btn-down(class='js-link' href='#about')
+
+		//contacts
+		+section(class='section_padding-t_100' id='about')
+			.section__container
+				p.section__info
+					|That's an interesting thing about design defines so much more than what products have a very minimalist way. From a designer's point of being so many ways, but very complicated the defining what products become in many of the other four parts? True simplicity. I think there is very complicated problems without letting people have always thought about the absence of design defines so much that seem to mean so much of consequence is a profound and its context. There's no other four parts? Powerpoint. Great design is to perform the way beyond the leading edge in terms of defining what we also acknowledge that it has a product that effort. Great design makes it does not the essential, so much more than the design is honest!
+
+		//services
+		+services
+
+		//footer
+		+footer
+
+		+script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js')
+		+script(src='js/app.js')
+
+

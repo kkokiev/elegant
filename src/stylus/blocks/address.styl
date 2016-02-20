@@ -1,0 +1,83 @@
+.address
+	display table
+	width 768px
+	margin 0 auto
+	color darkest
+	text-align left
+
+	+below(mobile)
+		width 100%
+
+	// &__bar
+
+	&__block
+		position relative
+		display table-cell
+		height 300px
+		width 300px
+		padding-top 45px
+		padding-x(30px)
+
+		+below(mobile)
+			display block
+			height auto
+			min-height 250px
+			padding-bottom 45px
+			width 100%
+
+		&:before
+			position absolute
+			top 33px
+			left 30px
+			content ''
+			display block
+			height 3px
+			width 31px
+			background light
+
+		&_wide
+			width 468px
+			padding-top 45px
+			padding-x(45px)
+			background bg-light
+
+			+below(mobile)
+				width 100%
+
+			&:before
+				display none
+
+		&_light
+			color light
+			background brand
+
+		&_dark
+			color light
+			background bg-black
+
+		&_bg
+			background transparent url(../img/content/address.jpg) 0 0 no-repeat
+			background-size cover
+
+	&__text
+		font-family font-regular
+		font-size 25px
+		line-height 32px
+
+		+below(mobile)
+			font-size 30px
+			line-height 1.4em
+
+		+below(smallest)
+			font-size 20px
+
+		&_thin
+			font-size 20px
+			line-height 32px
+
+			+below(smallest)
+				font-size 16px
+
+	&__btn-container
+		margin-top 77px
+		text-align center

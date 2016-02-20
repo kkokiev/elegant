@@ -1,0 +1,38 @@
+extends ../components/layout-default
+include ../components/page
+include ../components/topline
+include ../components/banner
+include ../components/section
+include ../components/address
+include ../components/btn
+include ../components/footer
+include ../components/script
+
+block head
+	- var pageTitle = 'Elegant Contact';
+
+block content
+	+page
+
+		//header
+		+topline
+
+		//banner
+		+banner(class='banner_contact')
+
+		//work
+		+section(class='section_padding-t_100')
+			p.section__intro This is it!
+
+			h2.section__title Contact us
+
+			.section__container
+				+address
+
+		//footer
+		+footer
+
+		+script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js')
+		+script(src='js/app.js')
+
+

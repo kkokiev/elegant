@@ -16,6 +16,12 @@
 		max-width 1084px
 		margin 0 auto
 
+		+below(1084px)
+			padding-x(16px)
+
+		+below(mobile)
+			padding-x(0px)
+
 	&__logo
 		display block
 		float left
@@ -98,4 +104,7 @@
 
 		&:hover
 			color brand
+
+		&_active
+			color vrand
 
