@@ -1,0 +1,59 @@
+include post
+include widget
+
+mixin blog-body()
+	.blog-body&attributes(attributes)
+
+		//Block with posts
+		.blog-body__main
+			+post
+			+post
+
+		//Block with widgets
+		.blog-body__sidebar
+
+			//Recent posts
+			+widget
+				h2.widget__title Recent posts
+					ul.widget__list
+						li.widget__list-item
+							a.widget__link(href="#") This is the title of your post
+						li.widget__list-item
+							a.widget__link(href="#") This is the title of your post
+						li.widget__list-item
+							a.widget__link(href="#") This is the title of your post
+						li.widget__list-item
+							a.widget__link(href="#") This is the title of your post
+
+			//Categories
+			+widget
+				h2.widget__title Categories
+					ul.widget__list
+						li.widget__list-item
+							a.widget__link(href="#") Art
+						li.widget__list-item
+							a.widget__link(href="#") Busines
+						li.widget__list-item
+							a.widget__link(href="#") Design
+						li.widget__list-item
+							a.widget__link(href="#") Code
+			//Projects
+			+widget
+				h2.widget__title Projects
+					ul.widget__list
+						li.widget__list-item
+							a.widget__link(href="#")
+								img.widget__img(src='img/content/work-1.jpg' alt='alt')
+						li.widget__list-item
+							a.widget__link(href="#")
+								img.widget__img(src='img/content/work-2.jpg' alt='alt')
+						li.widget__list-item
+							a.widget__link(href="#")
+								img.widget__img(src='img/content/work-3.jpg' alt='alt')
+						li.widget__list-item
+							a.widget__link(href="#")
+								img.widget__img(src='img/content/work-4.jpg' alt='alt')
+
+
+		.blog-body__btn-container
+			+btn(href='#') Load more posts

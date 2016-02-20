@@ -11,6 +11,7 @@ below(mobile)
   line-height: 40px;
   text-transform: uppercase;
 below(mobile)
+below(small)
 }
 .section__title {
   margin-bottom: 40px;
@@ -18,6 +19,7 @@ below(mobile)
   font-size: 44px;
   line-height: 50px;
   text-transform: capitalize;
+below(small)
 }
 .section__container {
   max-width: 768px;

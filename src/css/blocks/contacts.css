@@ -17,6 +17,7 @@ below(mobile)
   padding-top: 25px;
   padding-bottom: 40px;
 below(mobile)
+below(small)
 }
 .contacts__title {
   margin-bottom: 18px;
@@ -25,11 +26,14 @@ below(mobile)
   line-height: 60px;
   text-transform: uppercase;
 below(mobile)
+below(small)
 }
 .contacts__text {
   font-size: 19px;
   font-family: font-regular;
   letter-spacing: 0.03em;
 below(mobile)
+below(small)
+below(smallest)
 }
 /*# sourceMappingURL=src/stylus/blocks/contacts.css.map */

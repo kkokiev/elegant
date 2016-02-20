@@ -1,0 +1,78 @@
+.post-intro
+	display table
+	margin-bottom 85px
+	color dark
+	text-align: left
+
+	+below(mobile)
+		display block
+		margin-bottom 77px
+
+	&__img
+		display table-cell
+		height 384px
+		width 384px
+		background transparent url(../img/content/post-intro.jpg) 0 0 no-repeat
+		background-size cover
+
+		+below(mobile)
+			display block
+			width 100%
+
+		+below(smallest)
+			height 240px
+
+	&__content
+		display table-cell
+		height 384px
+		width 384px
+		padding-top 35px
+		padding-x(36px)
+		padding-bottom 60px
+		background bg-light
+		overflow hidden
+
+		+below(mobile)
+			display block
+			height auto
+			width 100%
+
+		+below(small)
+			padding-top 20px
+			padding-x(15px)
+			padding-bottom 30px
+
+	&__date
+		font-family font-regular
+		font-size 13px
+		line-height 60px
+		text-transform uppercase
+
+		+below(mobile)
+			font-size 16px
+
+	&__title
+		font-family font-regular
+		font-size 30px
+		line-height 60px
+
+		+below(mobile)
+			max-height auto
+			line-height 1.2em
+			margin-bottom 20px
+
+		+below(small)
+			font-size 20px
+			line-height 1.2em
+
+	&__text
+		max-height 94px
+		margin-bottom 55px
+		font-size 16px
+		line-height 24px
+		text-overflow ellipsis
+		white-space normal
+		overflow hidden
+
+		+below(mobile)
+			max-height auto
