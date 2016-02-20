@@ -1,0 +1,41 @@
+extends ../components/layout-default
+include ../components/page
+include ../components/topline
+include ../components/banner
+include ../components/section
+include ../components/btn
+include ../components/works
+include ../components/footer
+include ../components/script
+
+block head
+	- var pageTitle = 'Elegant Work';
+
+block content
+	+page
+
+		//header
+		+topline
+
+		//banner
+		+banner(class='banner_work')
+
+		//work
+		+section(class='section_padding-b_0 section_padding-t_100')
+			p.section__intro Our amazing work
+
+			h2.section__title What we do
+
+			.section__container.section__container_padding-b_100
+				p.section__info
+					| Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.
+
+			+works
+
+		//footer
+		+footer
+
+		+script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js')
+		+script(src='js/app.js')
+
+

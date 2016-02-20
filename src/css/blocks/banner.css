@@ -7,6 +7,13 @@
 .banner_blog {
   height: 50vh;
   background: transparent url("../img/content/bg-blog.jpg") 0 0 no-repeat;
+  background-size: cover;
+below(mobile)
+}
+.banner_work {
+  height: 50vh;
+  background: transparent url("../img/content/bg-work.jpg") 0 0 no-repeat;
+  background-size: cover;
 }
 .banner__content {
   position: absolute;

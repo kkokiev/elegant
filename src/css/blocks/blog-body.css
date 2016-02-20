@@ -4,16 +4,22 @@
   margin: 80px auto;
   padding: 64px;
   background: bg-light;
+below(mobile)
 }
 .blog-body__main {
   float: left;
   width: 668px;
+below(large)
+below(mobile)
 }
 .blog-body__sidebar {
   float: right;
   width: 296px;
+below(large)
+below(mobile)
 }
 .blog-body__btn-container {
+  text-align: center;
   clear: both;
 }
 /*# sourceMappingURL=src/stylus/blocks/blog-body.css.map */

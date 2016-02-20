@@ -10,6 +10,8 @@
   color: #000;
   font-family: font-thin;
   font-size: 30px;
+  letter-spacing: 0.035;
+below(small)
 }
 .post__date {
   color: brand;

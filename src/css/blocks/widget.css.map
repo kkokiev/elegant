@@ -1,0 +1,1 @@
+{"version":3,"sources":["src/stylus/blocks/widget.styl"],"names":[],"mappings":"AAAA;EACC,OAAM,KAAN;;AAEA;EACC,eAAc,KAAd;EACA,gBAAe,KAAf;EACA,WAAU,KAAV;EACA,gBAAe,MAAf;EACA,eAAc,gBAAd;;AAED;EACC,eAAc,KAAd;;AAED;EACC,aAAY,KAAZ;AAEa;;AAGd;EACC,OAAM,KAAN;EACA,aAAY,gBAAZ;EACA,WAAU,KAAV;EACA,aAAY,KAAZ;EACA,iBAAgB,KAAhB;;AAED;EACC,OAAM,KAAN","file":"widget.css"}
