@@ -1,0 +1,21 @@
+.social
+	max-width 1180px
+	margin 80px auto
+	text-align center
+	clearfix()
+
+	+below(mobile)
+		margin-y(40px)
+
+	&__block
+		float left
+		width 33.3333%
+
+		+below(mobile)
+			float none
+			width 100%
+			margin-bottom 15px
+
+			&:last-child
+				margin-bottom 0px
+

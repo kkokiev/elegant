@@ -1,0 +1,34 @@
+extends ../components/layout-default
+include ../components/page
+include ../components/topline
+include ../components/banner
+include ../components/project
+include ../components/social
+include ../components/footer
+include ../components/script
+
+block head
+	- var pageTitle = 'Elegant Project';
+
+block content
+	+page
+
+		//header
+		+topline
+
+		//banner
+		+banner(class='banner_project')
+
+		//project
+		+project
+
+		//social
+		+social
+
+		//footer
+		+footer
+
+		+script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js')
+		+script(src='js/app.js')
+
+
