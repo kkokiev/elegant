@@ -12,23 +12,35 @@ if(!(window.console && console.log)) {
 $(function () {
 
 	//setup navbar show and hide
-	var navBtn = $('#nav-toggle'),
-		navBar = $('#nav-menu');
+	var $navBtn = $('#nav-toggle'),
+		$navBar = $('#nav-menu');
 
-	navBtn.on('click', function(event) {
+	function hideNavbar() {
+		$navBar.removeClass('js-navbar').animate({height: '0'}, 200);
+	};
+
+	$navBtn.on('click', function(event) {
 		event.preventDefault();
 
-		if(navBar.hasClass('js-navbar')){
-			navBar.removeClass('js-navbar');
-			navBar.animate({height: '0'}, 200);
+		if($navBar.hasClass('js-navbar')){
+			hideNavbar();
 
 		} else {
-			navBar.addClass('js-navbar');
-			var curHeight = navBar.height();
-			navBar.css('height', 'auto');
-			var autoHeight = navBar.height();
-			navBar.height(curHeight).animate({height: autoHeight}, 200);
+			$navBar.addClass('js-navbar');
+			var curHeight = $navBar.height();
+			$navBar.css('height', 'auto');
+			var autoHeight = $navBar.height();
+			$navBar.height(curHeight).animate({height: autoHeight}, 200);
 		}
+	});
+
+	//hide navbar then click outside .topline
+	$('.topline').on('click', function(event) {
+		event.stopPropagation();
+	});
+
+	$('body').on('click', function() {
+		hideNavbar();
 	});
 
 
