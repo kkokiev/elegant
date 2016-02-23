@@ -87,7 +87,6 @@
 		border-top 1px solid light
 
 		+below(mobile)
-			padding-right 32px
 			border-top 0
 
 	&__menu-item
@@ -101,6 +100,9 @@
 		text-decoration none
 		text-transform uppercase
 		transition(all .4s linear)
+
+		+below(mobile)
+			padding-right 32px
 
 		&:hover
 			color brand
